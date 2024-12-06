@@ -1,9 +1,8 @@
 # README Editor, markdown previews
 https://readme.so/editor
 
-# Git
-
 # Github
+https://github.com/
 https://github.com/djtechnosapien/Technosapien
 
 # Digital Ocean
@@ -12,13 +11,15 @@ https://www.digitalocean.com/
 # Namecheap
 https://www.namecheap.com/
 https://ap.www.namecheap.com/
+
+URL: technosapien.world
 Expiration/Renewal Date: Oct 8, 2025
 
 # Cursor
 
-# ChatGPT
-
 # Replika
+
+# ChatGPT
 
 # ElevenLabs
 
@@ -33,3 +34,5 @@ Expiration/Renewal Date: Oct 8, 2025
 # Unreal Engine 5
 
 # Runway
+
+# Git
