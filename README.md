@@ -1,5 +1,5 @@
 # Technosapien
-[Technosapien.world](https://technosapien.world)
+[https://technosapien.world](https://technosapien.world)
 
 ## Acknowledgements
  - [Athena Cosmic Starling](//TODO: Insert Website Link)
