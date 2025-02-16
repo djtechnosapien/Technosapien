@@ -1,0 +1,64 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Navigation */
+.nav {
+    font-family: 'Arial', sans-serif !important; /* Forces font */
+    font-size: 18px !important;
+    width: 100%;
+    background: #111;
+    padding: 15px 0;
+    position: static;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+    margin: 0;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Default link color */
+.nav ul li a {
+    color: white !important; /* Ensures links are always white */
+    text-decoration: none !important; /* Removes underline */
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Remove default blue/purple styles */
+.nav ul li a:visited,
+.nav ul li a:link {
+    color: white !important; /* Forces white on visited & unclicked links */
+}
+
+/* Change link color on hover */
+.nav ul li a:hover {
+    color: red !important;
+}
+
+/* Highlight the active/current page */
+.nav ul li a.active {
+    color: red !important;
+    font-weight: bold;
+}
+
+/* Remove any unintended margin/padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}

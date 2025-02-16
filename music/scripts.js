@@ -102,3 +102,28 @@ musicData.forEach(track => {
     musicList.appendChild(item);
 });
 
+// Load the header dynamically
+document.addEventListener("DOMContentLoaded", function() {
+    fetch("/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+
+            // Load header.css dynamically
+            let headerStyle = document.createElement("link");
+            headerStyle.rel = "stylesheet";
+            headerStyle.href = "/header.css";
+            document.head.appendChild(headerStyle);
+
+            // Highlight the active page
+            let currentPage = window.location.pathname;
+            let navLinks = document.querySelectorAll(".nav ul li a");
+
+            navLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        })
+        .catch(error => console.error("Error loading header:", error));
+});

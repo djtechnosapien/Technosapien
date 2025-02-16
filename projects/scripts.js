@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    if (localStorage.getItem("darkMode") === "enabled") {
-        document.body.classList.add("dark-mode");
-    }
-
     loadProjects();
 
     // Animate project cards
@@ -64,19 +60,7 @@ function scrollToProjects() {
     document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
 }
 
-// Dark Mode Toggle
-const toggleDarkMode = document.getElementById("toggle-dark-mode");
-toggleDarkMode.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    localStorage.setItem("darkMode", document.body.classList.contains("dark-mode") ? "enabled" : "disabled");
-});
-
-// Load Dark Mode Preference on Page Load
 document.addEventListener("DOMContentLoaded", () => {
-    if (localStorage.getItem("darkMode") === "enabled") {
-        document.body.classList.add("dark-mode");
-    }
-
     // Animate project cards
     const projects = document.querySelectorAll(".project-card");
     projects.forEach((project, index) => {
@@ -113,3 +97,29 @@ function filterProjects(category) {
         }
     });
 }
+
+// Load the header dynamically
+document.addEventListener("DOMContentLoaded", function() {
+    fetch("/header.html")
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("header-placeholder").innerHTML = html;
+
+            // Load header.css dynamically
+            let headerStyle = document.createElement("link");
+            headerStyle.rel = "stylesheet";
+            headerStyle.href = "/header.css";
+            document.head.appendChild(headerStyle);
+
+            // Highlight the active page
+            let currentPage = window.location.pathname;
+            let navLinks = document.querySelectorAll(".nav ul li a");
+
+            navLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        })
+        .catch(error => console.error("Error loading header:", error));
+});
