@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Could include font-family here */
+}
+
+/* Full-Page Background */
+body {
+    background: radial-gradient(circle, #111, #000);
+    color: black;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'TechnosapienFont', sans-serif;
+}
+
+/* Hero Section */
+.hero h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* Navigation Buttons */
+.links {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #00ffcc, #0077ff);
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #0077ff, #00ffcc);
+    transform: scale(1.05);
+}
+
+/* Social Media Links */
+.social {
+    margin-top: 40px;
+}
+
+.social a {
+    margin: 10px;
+    color: #00ffcc;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #0077ff;
+}
+
+/* Customization Panel */
+.customization-panel {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    z-index: 10;
+}
+
+.customization-panel select {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /* Ensures it's behind all content */
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px; /* Adjust size as needed */
+    z-index: 10;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'TechnosapienFont';
+    src: url('assets/RobotoCondensed-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NewFont';
+    src: url('assets/SourceCodeRoman-ExtraLight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+/* Header */
+header {
+    padding: 50px;
+    background: linear-gradient(45deg, #0d0d0d, #1c1c1c);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+/* Dark Mode Button */
+#toggle-dark-mode {
+    margin-left: 20px;
+}
+
+/* Search Box */
+#search-box {
+    padding: 10px;
+    width: 250px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav button {
+    background-color: #333;
+    padding: 10px 15px;
+}
+
+nav button:hover {
+    background-color: #555;
+}
+
+/* Project Cards */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 255, 204, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.project-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 255, 204, 0.7);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+    color: #00ffcc;
+}
+
+.project-card p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Project Tags */
+.project-tags {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.project-tags span {
+    background-color: #0077ff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-tags span:hover {
+    background-color: #0055cc;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #0d0d0d;
+}

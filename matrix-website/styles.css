@@ -1,0 +1,64 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Matrix Canvas Styling */
+#matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Controls Styling */
+.controls {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    z-index: 10;
+}
+
+.controls label {
+    margin-right: 5px;
+}
+
+.controls input {
+    margin-right: 15px;
+}
+
+.customization-panel label, .customization-panel h2 {
+    color: green; /* Set the text color to black */
+    text-shadow: 0px 0px 4px pink; /* Add a subtle white glow */
+    /*font-weight: bold; /* Optional: Make the text bold for better readability */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* .customization-panel label {
+    display: block;
+    margin: 5px 0;
+}
+
+.customization-panel input {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.customization-panel input[type="checkbox"] {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0;
+} */
+
+/* .customization-panel label, .customization-panel h2 {
+    transition: color 0.3s ease; /* Smooth transition for text color */
+/* } */

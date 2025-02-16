@@ -1,0 +1,74 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+h2 {
+    border-bottom: 2px solid #00ffcc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Contact */
+.contact p a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+.contact p a:hover {
+    text-decoration: underline;
+}
+
+/* Job and Projects */
+.job, .project {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    color: #777;
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <p>A collection of my development, music, and creative works.</p>
+        <button onclick="scrollToProjects()">Explore Projects</button>
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
+        <input type="text" id="search-box" placeholder="Search projects..." onkeyup="searchProjects()">
+    </header>
+
+    <nav>
+        <ul>
+            <li><button onclick="filterProjects('all')">All</button></li>
+            <li><button onclick="filterProjects('web')">Web Development</button></li>
+            <li><button onclick="filterProjects('music')">Music</button></li>
+            <li><button onclick="filterProjects('ai')">AI & Automation</button></li>
+            <li><button onclick="filterProjects('art')">Art & Design</button></li>
+        </ul>
+    </nav>
+
+    <section id="projects"> 
+        <script defer src="scripts.js"></script>
+	<script defer src="projects.js"></script> <!-- This JSON file contains project data -->
+    </section>
+
+    <footer>
+        <p>Want to collaborate? <a href="contact.html">Reach out!</a></p>
+        <p>&copy; 2025 Technosapien</p>
+    </footer>
+</body>
+</html>
